@@ -3,6 +3,6 @@
 
 #include <stdlib.h>
 
-void buble_sort(void *, const size_t, const size_t, int(comparator)(const void *, const void *));
+void buble_sort(void *, const size_t, const size_t, int (*)(const void *, const void *));
 
 #endif
