@@ -1,11 +1,5 @@
 #include "bubble.h"
-
-void swap(char *xp, char *yp)
-{
-    char tmp = *xp;
-    *xp = *yp;
-    *yp = tmp;
-}
+#include "../utlis/swap.h"
 
 void buble_sort(void *base, const size_t num, const size_t size, int(comparator)(const void *, const void *))
 {
