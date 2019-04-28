@@ -1,4 +1,5 @@
 #include "stack.h"
+#include <stdlib.h>
 
 struct Stack *newStack()
 {
@@ -37,4 +38,11 @@ void *get(struct Stack *stack)
 size_t size(struct Stack *stack)
 {
     return stack->size;
+}
+
+void deleteStack(struct Stack *stack) {
+    while(size(stack)) {
+        pop(stack);
+    }
+    free(stack);
 }

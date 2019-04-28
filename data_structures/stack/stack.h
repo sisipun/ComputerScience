@@ -1,7 +1,7 @@
 #ifndef STACK_H
 #define STACK_H
 
-#include <stdlib.h>
+#include <stddef.h>
 
 struct StackElement
 {
@@ -17,12 +17,14 @@ struct Stack
 
 struct Stack *newStack();
 
-void push(struct Stack *stack, void *value);
+void push(struct Stack *, void *);
 
-void *pop(struct Stack *stack);
+void *pop(struct Stack *);
 
-void *get(struct Stack *stack);
+void *get(struct Stack *);
 
-size_t size(struct Stack *stack);
+size_t size(struct Stack *);
+
+void deleteStack(struct Stack *);
 
 #endif
