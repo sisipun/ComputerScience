@@ -1,7 +1,7 @@
 #include "bubble.h"
 #include "../utlis/swap.h"
 
-void buble_sort(void *base, const size_t num, const size_t size, int(comparator)(const void *, const void *))
+void bubble_sort(void *base, const size_t num, const size_t size, int(comparator)(const void *, const void *))
 {
     for (int i = num; i > 0; i--)
     {
